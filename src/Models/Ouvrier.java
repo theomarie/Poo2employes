@@ -6,8 +6,8 @@ import org.joda.time.DateTime;
 import org.joda.time.Years;
 
 
-public class Ouvrier extends Employes {
-	DateTime dateDebutContrat;
+public class Ouvrier extends Employe {
+	private DateTime dateDebutContrat;
 
 	public DateTime getDateDebutContrat() {
 		return dateDebutContrat;
@@ -17,8 +17,8 @@ public class Ouvrier extends Employes {
 		this.dateDebutContrat = dateDebutContrat;
 	}
 
-	public Ouvrier(String matricule, String nom, String prénom, String dateDeNaissance) {
-		super(matricule, nom, prénom, dateDeNaissance);
+	public Ouvrier(String matricule, String nom, String prenom, String dateDeNaissance) {
+		super(matricule, nom, prenom, dateDeNaissance);
 		this.dateDebutContrat = new DateTime() ;
 	}
 

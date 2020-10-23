@@ -13,6 +13,8 @@ public class main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+		System.out.println("-----------Ouvrier------------------");
 		// Teste avec un Ouvrier 1ans d'ancienneté
 		Ouvrier soudeur = new Ouvrier("34B13", "blanco", "sergio", "12/08/1990");
 	    soudeur.setDateDebutContrat(DateTime.parse("2019-10-23T13:57:35.481+02:00"));
@@ -39,7 +41,7 @@ public class main {
 	    // Fin Teste
 	    System.out.println("Fin de Test Ouvier Electricien 26ans d'ancienneté");
 	    
-	    // ---------- Cadre -----------------
+	    System.out.println("-----------Cadre------------------");
 	    
 	 // Teste des cadres
 	    
@@ -60,7 +62,7 @@ public class main {
 	    
 	    //----------------------------------------
 	    
-	    // -----------Patron------------------
+	    System.out.println("-----------Patron------------------");
 	    Patron leBoss = new Patron("34SDS", "boris", "jojo", "13/03/2002", 0.10);
 	    System.out.println("Salaire: "+leBoss.getSalaire());
 	    // Fin Teste

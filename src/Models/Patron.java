@@ -1,12 +1,12 @@
 package Models;
 
-public class Patron extends Employes {
-	static int chiffreDaffaire;
-	double pourcentage;
+public class Patron extends Employe {
+	private static int chiffreDaffaire;
+	private double pourcentage;
 	
 	
-	public Patron(String matricule, String nom, String prénom, String dateDeNaissance,double pourcentage) {
-		super(matricule, nom, prénom, dateDeNaissance);
+	public Patron(String matricule, String nom, String prenom, String dateDeNaissance,double pourcentage) {
+		super(matricule, nom, prenom, dateDeNaissance);
 		this.pourcentage = pourcentage;
 		chiffreDaffaire = 1800000;
 		

@@ -1,7 +1,7 @@
 package Models;
 
-public class Cadre extends Employes {
-	int indice;
+public class Cadre extends Employe {
+	private int indice;
 
 	public int getIndice() {return indice;}
 
@@ -9,27 +9,32 @@ public class Cadre extends Employes {
 
 	
 
-	public Cadre(String matricule, String nom, String prénom, String dateDeNaissance,int indice) {
-		super(matricule, nom, prénom, dateDeNaissance);
+	public Cadre(String matricule, String nom, String prenom, String dateDeNaissance,int indice) {
+		super(matricule, nom, prenom, dateDeNaissance);
 		this.indice = indice;
 	}
 
 	@Override
 	public double getSalaire() {
-		switch (getIndice()) {
+		int salaire = 0;
+		switch (indice) {
 		case 1:
-			return  13000;
+			salaire = 13000;
+			break;
 		case 2:
-			return  15000;
-
+			salaire = 15000;
+			break;
 		case 3:
-			return  17000;
+			salaire =  17000;
+			break;
 		case 4:
-			return  20000;
-			
+			salaire = 20000;
+			break;
 		default:
-			return 13000;
+			salaire = 13000;
+			break;
 		}
+		return salaire;
 	}
 
 	
